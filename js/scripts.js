@@ -13,4 +13,10 @@ function beepBoop(number) {
         arrayValues.push(i);
       }
   }
+  const numberString = arrayValues.toString();
+  
+  return numberString;
 }
+
+
+
