@@ -13,6 +13,4 @@ function beepBoop(number) {
         arrayValues.push(i);
       }
   }
-
-  console.log(arrayValues);
 }
