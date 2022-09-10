@@ -56,6 +56,33 @@ Test: "It should return an array with the numbers converted to a string"
 Code: beepBoop(5);
 Expected Output: ["0, 1, 2, 3, 4, 5"]
 
+Test: "It should return an array with each string as individual elements of the array"
+Code: beepBoop(5);
+Expected Output: ["0", "1", "2", "3", "4", "5"]
 
+Describe: replaceElements()
+Test: "It should return an array with the number 1 replace with "Beep!"
+Code: let numberArray = beepBoop(1);
+      beepBoop(numberArray);
+Expected Output: ["0", "Beep!"]
+
+Describe: replaceElements()
+Test: "It should return an array with the number 1 and 2 replaced with their respecive strings, "Beep!" and "Boop!".
+Code: numberArray = beepBoop(2);
+      beepBoop(numberArray);
+Expected Output: ["0", "Beep!", "Boop!"]
+
+Describe: replaceElements()
+Test: "It should return an array with the number 1,2,3 replaced with their respecive strings, "Beep!","Boop!", and "Won't you be my neighbor.
+Code: numberArray = beepBoop(2);
+      beepBoop(numberArray);
+Expected Output: ["0", "Beep!", "Boop!", "Won't you be my neighbor"]
+
+Describe: replaceElements()
+Test: "For any numbers containing a combination of 1s,2s, or 3s, the number will be replace with "Won't you be my neighbor if the number contains a 3, returns a "Boop!" if it contains a 2, and "Beep!" if it contains a 1.
+Code: numberArray = [11,12,13,123];
+      numberArray = numberArray.toString().split(",");
+      replaceElements(numberArray);
+Expected Output: ["Beep!", "Boop!", "Won't you be my neighbor", "Won't you be my neighbor"]
 
 
