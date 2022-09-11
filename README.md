@@ -7,6 +7,7 @@ Mr. Roboger's Neighborhood.
   * Bootstrap
   * JavaScript
   * Web APIs
+  * Craiyon AI generated image
 # Description
 Mr. Roboger's Neighborhood is a web application that takes a number from the user and returns a list of values from zero(0) to the inputed number with the following twist:
   * Numbers containing a 1 will be replaced with the string "Beep!".*
