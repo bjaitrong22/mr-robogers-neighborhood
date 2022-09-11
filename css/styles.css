@@ -1,0 +1,15 @@
+body {
+  background-color: rgb(198, 234, 211);
+}
+.header {
+  text-align: center;
+  font-weight:bolder;
+}
+
+.submitBtn {
+  background-color: rgb(105, 211, 105);
+}
+
+.hidden {
+  display: none;
+}

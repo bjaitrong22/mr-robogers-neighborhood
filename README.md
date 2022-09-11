@@ -47,6 +47,14 @@ Expected Output: {error: true, message: 'A positive Integer was not entered'}
 Test: "It should return an error message if the user enters negative integers"
 Code: beepBoop(-1);
 Expected Output: {error: true, message: 'A positive Integer was not entered'}
+
+Test: "It should return an error message if the user enters "" "
+Code: beepBoop("");
+Expected Output: {error: true, message: 'A positive Integer was not entered'}
+
+Test: "It should return an error message if the user enters "      " "
+Code: beepBoop("      ");
+Expected Output: {error: true, message: 'A positive Integer was not entered'}
   
 Test: "It should return an array of numbers from 0 to the user's inputted number"
 Code: beepBoop(5);
