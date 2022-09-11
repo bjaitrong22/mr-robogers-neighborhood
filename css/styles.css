@@ -1,6 +1,13 @@
 body {
   background-color: rgb(198, 234, 211);
+  background-repeat: no-repeat;
 }
+
+img {
+  height: 35em;
+  width: 100%;
+  display: block;
+} 
 .header {
   text-align: center;
   font-weight:bolder;
@@ -12,4 +19,9 @@ body {
 
 .hidden {
   display: none;
+}
+
+span {
+  font-weight: 500;
+  font-size: 1.5em;
 }
