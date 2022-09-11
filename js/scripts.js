@@ -48,8 +48,35 @@ return outputString;
 
 // UI logic
 
+function handleInput(event) {
+
+  const inputString = document.getElementById("inputNumber").value;
+  const outputString = beepBoop(inputString);
+
+  document.getElementById("outputList").innerText = outputString;
+  event.preventDefault();
+}
 
 
 window.addEventListener("load", function() {
-  document.querySelector("form#word-counter").addEventListener("submit", handleFormSubmission);
+  document.getElementById("numberSubstitute").addEventListener("submit", handleInput);
+  
+  let form = document.querySelector("form");
+  let submitBtn = document.getElementById("submitBtn");
+  let resetBtn = document.getElementById("resetBtn");
+  let codingLanguage = document.getElementById("codingLanguage");
+
+  submitBtn.removeAttribute("hidden");
+  
+  form.addEventListener("submit", function() {
+    submitBtn.setAttribute("hidden","hidden");
+    resetBtn.removeAttribute("class");
+  });
+
+  resetBtn.addEventListener("click", function() {
+    submitBtn.removeAttribute("hidden");
+    document.getElementById("outputList").innerText = null;
+    resetBtn.setAttribute("class","hidden")
+  });
+
 });
