@@ -23,7 +23,7 @@ Mr. Roboger's Neighborhood is a web application that takes a number from the use
   * Open index.html 
 
 # Showing your work on GitHub pages
-  * Use this link to view this web page on **GitHub Pages**: https://bjaitrong22.github.io/mr-robogers-neighborhood.git/
+  * Use this link to view this web page on **GitHub Pages**: https://bjaitrong22.github.io/mr-robogers-neighborhood/
   * To create gitHub Pages for your portfolio, type **git branch gh-pages**
   * Switch over to your gh-pages branch, type **git checkout gh-pages**
   * Push your gh-pages branch to GitHub, type **git push origin gh-pages**
